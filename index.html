@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Wichtig für Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Die Welt des Fußballs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url("https://www.rtl.de/img/2298558/1744401800/mobileBanner.webp") center/cover no-repeat;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #1b5e20;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #111;
+            border-radius: 8px;
+        }
+
+        section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        h2 {
+            color: #1b5e20;
+        }
+
+        button {
+            background-color: #1b5e20;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #145214;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* 📱 Anpassungen für Handys */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 50px 15px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 20px 15px;
+            }
+
+            button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Die Welt des Fußballs</h1>
+    <p>Der beliebteste Sport der Welt</p>
+</header>
+
+<nav>
+    <a href="#geschichte">Geschichte</a>
+    <a href="#regeln">Spielregeln</a>
+    <a href="#spieler">Spieler</a>
+    <a href="#vereine">Vereine</a>
+</nav>
+
+<section id="geschichte">
+    <h2>Geschichte des Fußballs</h2>
+    <p>
+        Fußball entstand im 19. Jahrhundert in England und entwickelte sich
+        schnell zu einem der beliebtesten Sportarten weltweit.
+    </p>
+</section>
+
+<section id="regeln">
+    <h2>Spielregeln</h2>
+    <ul>
+        <li>11 Spieler pro Mannschaft</li>
+        <li>90 Minuten Spielzeit</li>
+        <li>Torwart darf Hände benutzen</li>
+        <li>Mehr Tore = Sieg</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6" alt="Spielregeln">
+</section>
+
+<section id="spieler">
+    <h2>Bekannte Fußballspieler</h2>
+    <p>Lionel Messi, Cristiano Ronaldo, Pelé und Diego Maradona.</p>
+    <img src="https://assets.goal.com/images/v3/bltf7bb56da15000cef/GettyImages-1245710025.jpg">
+</section>
+
+<section id="vereine">
+    <h2>Berühmte Vereine</h2>
+    <p>FC Bayern München, Real Madrid, FC Barcelona und Manchester United.</p>
+    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20">
+</section>
+
+<div class="button-container">
+    <a href="https://www.bundesliga.com/de/bundesliga" target="_blank">
+        <button>Zur Bundesliga-Website</button>
+    </a>
+</div>
+
+<footer>
+    <p>© 2025 Fußball-Website | Erstellt mit HTML & CSS</p>
+</footer>
+
+</body>
+</html>
